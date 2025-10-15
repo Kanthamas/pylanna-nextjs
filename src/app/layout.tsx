@@ -9,7 +9,7 @@ import SchemaScript from "@/config/seo/SchemaScript";
 
 // UI Component
 
-import Header from "@/components/navigation/Header"
+import Header from "@/components/navigation/Header";
 import Footer from "@/components/navigation/Footer";
 
 const latoSans = Lato({
@@ -52,7 +52,7 @@ export default function RootLayout({
 			<body className="flex flex-col min-h-screen antialiased bg-neutral-50 text-neutral-800">
 				<Header />
 
-				<main className="flex-grow w-full max-w-7xl mx-auto p-4 md:p-8">
+				<main className="flex-grow w-full  mx-auto p-4 md:p-8">
 					{children}
 				</main>
 
