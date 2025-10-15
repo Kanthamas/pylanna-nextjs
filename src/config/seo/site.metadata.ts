@@ -3,10 +3,12 @@ import type { Metadata } from "next";
 // --- Next.js Metadata Export (Essential SEO & OpenGraph) ---
 export const siteMetadata: Metadata = {
 	// Primary Title and Description for Search Results
-	title: "PyLanna: Chiang Mai Python Community | Evolution, Not Just Survival",
+	title: "PyLanna",
 	description:
 		"PyLanna is Chiang Mai's open and diverse Python community. A hub for learning, networking, and deepening Python skills, welcoming all developers—both Thai and international.",
-
+	icons: {
+		icon: "/favicon-32x32.png",
+	},
 	// Local SEO & Keywords targeting Chiang Mai
 	keywords: [
 		"Python community Chiang Mai",
