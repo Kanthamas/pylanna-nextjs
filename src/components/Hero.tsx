@@ -53,12 +53,12 @@ const Hero: React.FC = () => {
 	return (
 		<div
 			ref={container}
-			className="flex flex-col max-w-8/10 mx-auto md:mt-24 mt-8"
+			className="flex flex-col max-w-8/10 mx-auto mt-8"
 		>
-			<div className="text-animation text-neutral-950 font-bold text-6xl md:text-9xl py-4">
+			<div className="text-animation text-neutral-950 dark:text-neutral-100 font-bold text-6xl md:text-9xl lg:text-9 py-4">
 				PyLanna
 			</div>
-			<div className="text-animation md:text-neutral-800 text-neutral-600 md:font-semibold md:text-5xl text-3xl md:my-12 md:py-2 mb-6">
+			<div className="text-animation md:text-neutral-800 text-neutral-600 dark:text-neutral-300 md:font-semibold md:text-5xl text-3xl md:my-12 md:py-2 mb-8 mt-4">
 				We are Python Community in{" "}
 				<span className="block md:inline">Chiang Mai</span>
 			</div>
