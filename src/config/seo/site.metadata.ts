@@ -31,7 +31,7 @@ export const siteMetadata: Metadata = {
 		siteName: "PyLanna",
 		images: [
 			{
-				url: "https://www.pylanna.org/og-image.png", // Ensure this image is also in public/
+				url: "https://www.pylanna.org/og-image.png", 
 				width: 1200,
 				height: 630,
 				alt: "PyLanna - Chiang Mai Python Community Logo",
