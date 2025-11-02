@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { mainNav } from "@/config/navigation";
+import { FaFacebook } from "react-icons/fa6";
 
 const Header: React.FC = () => {
 	const linkClasses =
@@ -35,28 +36,29 @@ const Header: React.FC = () => {
 				<span className={`${linkClasses} ml-6`}>About</span>
 				<span className={`${linkClasses} ml-6`}>Contact</span>
 			</nav> */}
+			<div className="flex items-center gap-4 text-lg font-medium">
+				<nav className=" text-wine-berry-950 hidden md:flex items-center gap-4 ">
+					{mainNav.map((item) => (
+						<Link
+							key={item.label}
+							href={item.href}
+							className={`${linkClasses} ${navLinkClasses} dark:text-neutral-300 dark:hover:text-cream-can-400`}
+						>
+							{item.label}
+						</Link>
+					))}
+				</nav>
 
-			<nav className="text-lg font-medium text-wine-berry-950 hidden md:block items-center space-x-6">
-				{mainNav.map((item) => (
-					<Link
-						key={item.label}
-						href={item.href}
-						className={`${linkClasses} ${navLinkClasses} dark:text-neutral-300 dark:hover:text-cream-can-400`}
-					>
-						{item.label}
-					</Link>
-				))}
-			</nav>
-
-			{/* Action Button Placeholder */}
-			<Link
-				href="https://discord.gg/PyLanna"
-				target="_blank"
-				rel="noopener noreferrer"
-				className="disabled hidden px-4 py-2 text-sm font-semibold rounded-lg bg-cream-can-300 text-wine-berry-950 hover:bg-cream-can-400 transition shadow-md"
-			>
-				Join Discord
-			</Link>
+				{/* Action Button Placeholder */}
+				<Link
+					href="https://www.facebook.com/groups/1181951933835645"
+					target="_blank"
+					rel="noopener noreferrer"
+					className={`${linkClasses} ${navLinkClasses} text-xl dark:text-neutral-300 dark:hover:text-cream-can-400`}
+				>
+					<FaFacebook />
+				</Link>
+			</div>
 		</header>
 	);
 };

@@ -7,20 +7,24 @@ export type NavItem = {
 export const mainNav: NavItem[] = [
 	{
 		label: "Meetups",
-		href: "/",
+		href: "https://luma.com/nehtko39?tk=6eDwg5",
 	},
+	// {
+	// 	label: "Blog",
+	// 	href: "/",
+	// },
+	// {
+	// 	label: "About",
+	// 	href: "/",
+	// },
 	{
-		label: "Blog",
-		href: "/",
+		label: "Team",
+		href: "/team",
 	},
-	{
-		label: "About",
-		href: "/",
-	},
-	{
-		label: "Contact",
-		href: "/",
-	},
+	// {
+	// 	label: "Contact",
+	// 	href: "/contact",
+	// },
 ];
 
 // 3. Define the external social/community links (optional, for Footer)

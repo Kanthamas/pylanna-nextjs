@@ -5,8 +5,8 @@ const Footer: React.FC = () => {
 		<footer className="w-full bg-wine-berry-950 text-cream-can-300 p-8 text-center text-sm mt-auto shadow-inner">
 			<div className="max-w-7xl mx-auto space-y-3">
 				<p className="text-base font-semibold">
-					&copy; {new Date().getFullYear()} PyLanna - Chiang Mai Python
-					Community
+					&copy; {new Date().getFullYear()} PyLanna - Python User Group
+					Community of Northern Thailand
 				</p>
 
 				<p className="text-wine-berry-200">
