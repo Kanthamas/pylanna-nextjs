@@ -4,7 +4,7 @@ import React from "react";
 
 export type TeamMember = {
 	avatar?: string; 
-	avatarIcon?: React.ComponentType; 
+	avatarIcon?: string | React.ComponentType; 
 	name: string;
 	role?: string;
 	company?: string;
@@ -18,15 +18,15 @@ interface TeamCardProps {
 
 const TeamCard: React.FC<TeamCardProps> = ({ member }) => {
 	return (
-		<div className="bg-white dark:bg-neutral-800 shadow-md rounded-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition-transform transform hover:-translate-y-1">
+		<div className="bg-white dark:bg-neutral-800 shadow-md rounded-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition-transform transform hover:-translate-y-1 ring-3 ring-neutral-900">
 			{member.avatar ? (
 				<img
 					src={member.avatar}
 					alt={member.name}
-					className="w-24 h-24 rounded-full object-cover mb-4"
+					className="w-24 h-24 rounded-full object-cover mb-4 ring-2 ring-cream-can-300"
 				/>
 			) : member.avatarIcon ? (
-				<div className="w-24 h-24 flex items-center justify-center text-5xl text-neutral-400 dark:text-neutral-500 mb-4 rounded-full bg-neutral-100 dark:bg-neutral-700">
+				<div className="w-24 h-24 flex items-center justify-center text-5xl text-neutral-400 dark:text-neutral-500 mb-4 rounded-full bg-neutral-100 dark:bg-neutral-700  ring-2 ring-cream-can-300">
 					{member.avatarIcon ? React.createElement(member.avatarIcon) : "?"}
 				</div>
 			) : (
