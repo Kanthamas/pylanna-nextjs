@@ -1,6 +1,10 @@
+import React from "react";
+import { FaPython, FaUser } from "react-icons/fa6"; 
+
 export type NavItem = {
 	label: string;
 	href: string;
+	icon?: string | React.ComponentType;
 };
 
 // 2. Define the main navigation array (for the Header)
@@ -8,6 +12,7 @@ export const mainNav: NavItem[] = [
 	{
 		label: "Meetups",
 		href: "https://luma.com/nehtko39?tk=6eDwg5",
+		icon: FaPython,
 	},
 	// {
 	// 	label: "Blog",
@@ -20,6 +25,7 @@ export const mainNav: NavItem[] = [
 	{
 		label: "Team",
 		href: "/team",
+		icon: FaUser,
 	},
 	// {
 	// 	label: "Contact",

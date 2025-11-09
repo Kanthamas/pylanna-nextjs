@@ -6,8 +6,8 @@ import { teamMembers } from "@/data/teamMember";
 
 const TeamPage: React.FC = () => {
 	return (
-		<div className="max-w-6xl mx-auto px-4 ">
-			<h1 className="text-4xl font-extrabold text-neutral-900 dark:text-cream-can-300 mb-4 text-center">
+		<div className="max-w-7xl mx-auto px-4 -mt-2">
+			<h1 className="text-4xl font-extrabold text-neutral-900 dark:text-cream-can-300 mb-2 text-center">
 				Our Core Team
 			</h1>
 			<p className="text-center text-neutral-700 dark:text-neutral-300 mb-8">

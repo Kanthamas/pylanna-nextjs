@@ -48,7 +48,7 @@ const Hero: React.FC = () => {
 					from: "random",
 					yoyo: true,
 				},
-				duration: 1.5,
+				duration: 1.2,
 			});
 
 			// Yellow box animation
@@ -63,10 +63,10 @@ const Hero: React.FC = () => {
 				{
 					y: 0,
 					autoAlpha: 1,
-					duration: 1,
-					ease: "power2.out",
+					duration: 0.8,
+					ease: "power2.inOut",
 				},
-				"+=0.5" // 👈 delay 0.5s after yellow box animation
+				"+=0.1" // 👈 delay 0.5s after yellow box animation
 			);
 		},
 		{ scope: container }
