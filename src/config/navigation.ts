@@ -1,26 +1,36 @@
+import React from "react";
+import { FaPython, FaUser } from "react-icons/fa6"; 
+
 export type NavItem = {
 	label: string;
 	href: string;
+	icon?: string | React.ComponentType;
 };
 
 // 2. Define the main navigation array (for the Header)
 export const mainNav: NavItem[] = [
 	{
 		label: "Meetups",
-		href: "/",
+		href: "https://luma.com/nehtko39?tk=6eDwg5",
+		icon: FaPython,
 	},
+	// {
+	// 	label: "Blog",
+	// 	href: "/",
+	// },
+	// {
+	// 	label: "About",
+	// 	href: "/",
+	// },
 	{
-		label: "Blog",
-		href: "/",
+		label: "Team",
+		href: "/team",
+		icon: FaUser,
 	},
-	{
-		label: "About",
-		href: "/",
-	},
-	{
-		label: "Contact",
-		href: "/",
-	},
+	// {
+	// 	label: "Contact",
+	// 	href: "/contact",
+	// },
 ];
 
 // 3. Define the external social/community links (optional, for Footer)
